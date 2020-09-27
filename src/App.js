@@ -6,10 +6,14 @@ import Pokemon from "./Pokemon";
 function App() {
   return (
     <Switch>
-      <Route exact path="/" render={(props) => <Pokedex {...props} />} />
       <Route
-        exact
+        path="/"
+        component={Pokedex}
+        render={(props) => <Pokedex {...props} />}
+      />
+      <Route
         path="/:pokemonId"
+        component={Pokemon}
         render={(props) => <Pokemon {...props} />}
       />
     </Switch>
