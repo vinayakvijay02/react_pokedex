@@ -90,7 +90,6 @@ const Pokemon = (props) => {
   }, [pokemonId]);
   const generatePokemonJSX = () => {
     const { name, id, species, height, weight, types, sprites } = pokemon;
-    console.log(console.log);
 
     const fullImageUrl = `https://pokeres.bastionbot.org/images/pokemon/${id}.png`;
     const { front_default } = sprites;

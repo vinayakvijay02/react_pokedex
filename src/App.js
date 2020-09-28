@@ -5,15 +5,11 @@ import Pokemon from "./Pokemon";
 
 function App() {
   return (
-    <Switch>
+    <Switch basename={process.env.PUBLIC_URL}>
+      <Route exact path="/" render={(props) => <Pokedex {...props} />} />
       <Route
-        path="/"
-        component={Pokedex}
-        render={(props) => <Pokedex {...props} />}
-      />
-      <Route
+        exact
         path="/:pokemonId"
-        component={Pokemon}
         render={(props) => <Pokemon {...props} />}
       />
     </Switch>

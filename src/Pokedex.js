@@ -153,10 +153,7 @@ const Pokedex = (props) => {
 
     return (
       <Grid item xs={2} key={pokemonId}>
-        <Card
-          className={classes.card}
-          onClick={() => history.push(`/${pokemonId}`)}
-        >
+        <Card className={classes.card} onClick={() => history.push(`/${id}`)}>
           {/* {imageLoading ? (
             <img
               src={spinner}
