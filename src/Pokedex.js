@@ -152,7 +152,7 @@ const Pokedex = (props) => {
     const { id, name, sprite } = pokemonData[pokemonId];
 
     return (
-      <Grid item xs={2} key={pokemonId}>
+      <Grid item item xs={12} sm={2} key={pokemonId}>
         <Card className={classes.card} onClick={() => history.push(`/${id}`)}>
           {/* {imageLoading ? (
             <img
@@ -209,7 +209,7 @@ const Pokedex = (props) => {
       </AppBar>
 
       {pokemonData ? (
-        <Grid container spacing={4}>
+        <Grid container spacing={3}>
           {Object.keys(pokemonData).map(
             (pokemonId) =>
               pokemonData[pokemonId].name.includes(filter) &&

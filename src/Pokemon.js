@@ -136,7 +136,7 @@ const Pokemon = (props) => {
                   //  icon={`<img alt="${name}"  src="${MyIcon}" style="max-height: 10px; max-width: 10px;" >`}
                   avatar={
                     <Avatar
-                      src={`/images/types/${name}.png`}
+                      src={`./images/types/${name}.png`}
                       style={{ backgroundColor: `${colorSelectedValue}` }}
                     />
                   }
